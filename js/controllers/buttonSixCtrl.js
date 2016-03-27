@@ -4,8 +4,12 @@ angular.module("myTasks")
 
 buttonSixController.$inject = ["$scope"];
 
-function buttonSixController(){
+function buttonSixController($scope){
     $scope.frame = function(){
-        
+        var friends = ['Jessica', 'James', 'Will', 'Jordan', 'Sherona', 'Lacey', 'Lucas', 'Layla', 'Laura Beth', 'Lola'];
+        for(var i = 0; i < friends.length; i++){
+            var friendLi = $("<li></li>").text(friends[i]);
+            $("#friend").append(friendLi);
+        }
     }
 }

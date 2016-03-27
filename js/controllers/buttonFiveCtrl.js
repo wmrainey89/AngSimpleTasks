@@ -4,8 +4,8 @@ angular.module("myTasks")
 
 buttonFiveController.$inject = ["$scope"];
 
-function buttonFiveController(){
+function buttonFiveController($scope){
     $scope.five = function() {
-        
+        $("#blank").append("<span>William McKenzie Rainey</span>");
     }
 }
